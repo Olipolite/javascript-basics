@@ -6,41 +6,41 @@ const subtract = (a, b) => {
   return a - b;
 };
 
-function multiply (a, b) {
-  // your code here
-}
+const multiply = (d, f) => {
+  return d * f;
+};
 
-function divide (a, b) {
-  // your code here
-}
+const divide = (a, b) => {
+  return a / b;
+};
 
-function power (a, b) {
-  // your code here
-}
+const power = (a, b) => {
+  return a ** b;
+};
 
-function round (a) {
-  // your code here
-}
+const round = a => {
+  return Math.round(a);
+};
 
-function roundUp (a) {
-  // your code here
-}
+const roundUp = a => {
+  return Math.ceil(a);
+};
 
-function roundDown (a) {
-  // your code here
-}
+const roundDown = a => {
+  return Math.floor(a);
+};
 
-function absolute (a) {
-  // your code here
-}
+const absolute = a => {
+  return Math.abs(a);
+};
 
-function quotient (a, b) {
-  // your code here
-}
+const quotient = (a, b) => {
+  return ~~(a / b);
+};
 
-function remainder (a, b) {
-  // your code here
-}
+const remainder = (a, b) => {
+  return (a % b);
+};
 
 module.exports = {
   add,
