@@ -96,10 +96,10 @@ function containsVowels(string) {
 }
 
 function isLowerCase(string) {
-if (string == string.toLowerCase()) {
-  return true;
-}
-return false;
+  if (string == string.toLowerCase()) {
+    return true;
+  }
+  return false;
 }
 
 module.exports = {
