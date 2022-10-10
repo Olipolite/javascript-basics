@@ -32,19 +32,46 @@ const numbersToStrings = numbers => {
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  return strings.map(words => words.toUpperCase());
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
-};
+  strings.map((element, index) => {
+    element = element.split('');
+    element = element.reverse();
+    element = element.join('');
+    strings[index] = element;
+    
+  });
+  return strings;
+  /*
+  const newArray = []
+  strings.forEach(element => {
+    element = element.split('');
+    element = element.reverse();
+    element = element.join('');
+    newArray.push(element);
+  });
+  return newArray;
+  */
+}
 
-const onlyEven = numbers => {
-  // your code here
-};
+function onlyEven(numbers) {
+  const evenNumbers = numbers.filter(element => {
+    if (element % 2 === 0) {
+      return element;
+    }
+  });
+  console.log(evenNumbers);
+  return evenNumbers;
+} 
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newarray = (index, array);
+  if (!index){
+    return newarray.shift();
+  }
+  return newarray.splice(index, index-1);
 };
 
 const elementsStartingWithAVowel = strings => {
