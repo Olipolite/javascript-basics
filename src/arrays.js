@@ -67,15 +67,27 @@ function onlyEven(numbers) {
 } 
 
 const removeNthElement2 = (index, array) => {
-  const newarray = (index, array);
-  if (!index){
-    return newarray.shift();
-  }
-  return newarray.splice(index, index-1);
+  const items = array.filter(element => {
+    if (array[index] !== element) {
+      return element;
+    }
+  });
+  return items;
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+  const vowels = ['a', 'e', 'i', 'o', 'u'];
+  const newArray = strings.filter(element => {
+    for (let i = 0; i < vowels.length; i++) {
+      if (
+        element.charAt(0) == vowels[i] ||
+        element.charAt(0) == vowels[i].toUpperCase()
+      ) {
+        return element;
+      }
+    }
+  });
+  return newArray;
 };
 
 const removeSpaces = string => {
