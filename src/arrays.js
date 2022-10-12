@@ -91,15 +91,21 @@ const elementsStartingWithAVowel = strings => {
 };
 
 const removeSpaces = string => {
-  // your code here
+  const bajs = string.replaceAll(' ', '');
+  return bajs;
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  const sum = numbers.reduce((acc, number) => {
+    return acc + number;
+  });
+  return sum;
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  return strings.sort(
+    (a, b) => a.charCodeAt(a.length - 1) - b.charCodeAt(b.length - 1)
+  );
 };
 
 module.exports = {
